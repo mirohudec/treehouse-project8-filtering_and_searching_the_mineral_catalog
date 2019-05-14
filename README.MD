@@ -1,6 +1,6 @@
-# -> Mineral Catalog <-
+# ->Mineral Catalog<-
 
-## -> TreeHouse project 6 <-
+## ->TreeHouse project 6<-
 
 ### Instructions:
 
@@ -10,4 +10,4 @@ A web designer has already designed the pages. You only need to write the code t
 
 ### How to run:
 
-Run python manage.py populatedatabase (found in (https://stackoverflow.com/questions/53579677/django-2-1-how-to-import-models-in-a-custom-py-file)) if databaase does not exist. It expects mineral.json file under mineral_catalog/static/data
+Run python manage.py populatedatabase (found in https://stackoverflow.com/questions/53579677/django-2-1-how-to-import-models-in-a-custom-py-file) if databaase does not exist. It expects mineral.json file under mineral_catalog/static/data
