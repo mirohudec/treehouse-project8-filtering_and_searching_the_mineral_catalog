@@ -1,9 +1,10 @@
 <p align="center">
-# Mineral Catalog
+<h1> Mineral Catalog </h1>
 </p>
 <p align="center">
-## TreeHouse project 6
+<h2> TreeHouse project 6 </h2>
 </p>
+
 ### Instructions:
 
 As part of your job, you’ve been asked to build a website that displays information about various minerals (AKA rocks). The home page of the site contains a list of all of the minerals in a database. Clicking on a mineral’s name opens a page that displays information about the mineral.
