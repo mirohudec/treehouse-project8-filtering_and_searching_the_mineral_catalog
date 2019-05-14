@@ -1,6 +1,6 @@
-# Mineral Catalog </h1>
+# Mineral Catalog 
 
-## TreeHouse project 6 </h2>
+## TreeHouse project 6 
 
 ### Instructions:
 
