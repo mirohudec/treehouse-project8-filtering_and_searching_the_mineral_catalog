@@ -1,9 +1,6 @@
-<p align="center">
-<h1> Mineral Catalog </h1>
-</p>
-<p align="center">
-<h2> TreeHouse project 6 </h2>
-</p>
+# Mineral Catalog </h1>
+
+## TreeHouse project 6 </h2>
 
 ### Instructions:
 
