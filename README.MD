@@ -15,4 +15,8 @@ You can run python manage.py populatedatabase (found in https://stackoverflow.co
 
 ### Comments
 
+Added admin page for minerals: username: crit password: 123
+
+Minerals.json have a lot of formulas wrong (from wikipedia - formula mass instead of formula)
+
 Going for the Exceeds Expectations grade
