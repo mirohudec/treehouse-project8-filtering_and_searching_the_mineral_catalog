@@ -1,0 +1,18 @@
+.general {
+	border-radius: 10px;
+	background-color: #e5d9ca;
+}
+
+.other {
+	border-radius: 10px;
+	background-color: #e5d9ca;
+}
+
+.mineral__category,
+td {
+	text-align: center;
+}
+
+table {
+	width: 100%;
+}
