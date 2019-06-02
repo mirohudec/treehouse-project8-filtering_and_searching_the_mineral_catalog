@@ -27,5 +27,14 @@
 	</head>
 	<body>
 		{% block content %} {% endblock %}
+    <div class="bounds filter">
+		<div class="filter-container minerals__container">
+            </form>
+            <form action="/minerals/" method="GET">
+                {{ form.as_p }}
+                <a class="reset" href="{% url 'mineral_catalog:list' %}">Reset</a>
+            </form>
+        </div>
+        </div>
 	</body>
 </html>

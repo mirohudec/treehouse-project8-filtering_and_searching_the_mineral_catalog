@@ -11,6 +11,8 @@ autopep8 = "*"
 
 [packages]
 django = "*"
+django-debug-toolbar = "*"
+coverage = "*"
 
 [requires]
 python_version = "3.7"

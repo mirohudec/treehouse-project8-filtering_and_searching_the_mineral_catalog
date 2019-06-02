@@ -10558,26 +10558,6 @@
     "group": "Silicates"
   },
   {
-    "name": "Copper",
-    "image_filename": "Copper.jpg",
-    "image_caption": "Native copper from Ray mine, Arizona (specimen 5.25 x 4 x 1 cm)",
-    "category": "Native metal",
-    "formula": "Cu",
-    "strunz_classification": "01.AA.05",
-    "crystal_system": "cubic Hexoctahedral",
-    "unit_cell": "a = 3.615 \u00c5 = 4",
-    "color": "Pale rose on fresh surface, quickly darkens to copper-red; in reflected light, pale rose",
-    "crystal_symmetry": "Isometric 4/m 3 2/m",
-    "cleavage": "None",
-    "mohs_scale_hardness": "2\u00bd\u20133",
-    "luster": "Metallic",
-    "streak": "Copper-red",
-    "diaphaneity": "Opaque",
-    "crystal_habit": "As cubes, dodecahedra, and as tetrahexahedra; rarely as octahedra and complex combinations. Commonly flattened on {111}, elongated along . Also as irregular distortions, in twisted, wirelike shapes; filiform, arborescent, massive",
-    "specific_gravity": "8.95",
-    "group": "Native Elements"
-  },
-  {
     "name": "Natrolite",
     "image_filename": "Natrolite.jpg",
     "image_caption": "Natrolite",
@@ -10669,25 +10649,6 @@
     "refractive_index": "n\u03c9 = 1.529 - 1.546 n\u03b5 = 1.526 - 1.542",
     "crystal_habit": "Massive granular to prismatic",
     "specific_gravity": "2.55 - 2.65, average = 2.59",
-    "group": "Silicates"
-  },
-  {
-    "name": "N\u00e9pouite",
-    "image_filename": "N\u00e9pouite.jpg",
-    "image_caption": "N\u00e9pouite from N\u00e9poui Mine, North Province, New Caledonia, New Caledonia Specimen size 21 cm.",
-    "category": "PhyllosilicatesKaolinite-serpentine group",
-    "formula": "Ni<sub>3</sub>(Si<sub>2</sub>O<sub>5</sub>)(OH)<sub>4</sub>",
-    "strunz_classification": "09.ED.15",
-    "crystal_system": "Orthorhombic Pyramidal H-M Symbol mm2",
-    "cleavage": "perfect on {001}",
-    "mohs_scale_hardness": "2 to 2\u00bd",
-    "luster": "earthy to waxy, also pearly",
-    "streak": "greenish white",
-    "diaphaneity": "semitranslucent",
-    "optical_properties": "Biaxial (-)",
-    "refractive_index": "n\u03b1 = 1.600 - 1.630 n\u03b3 = 1.635 - 1.650",
-    "crystal_habit": "generally massive, also fibrous and microscopic pseudohexagonal platy crystals",
-    "specific_gravity": "3.18 to 3.24 (measured)",
     "group": "Silicates"
   },
   {
@@ -15123,24 +15084,6 @@
     "crystal_habit": "Tabular crystals; Foliated to earthy masses and encrustations",
     "specific_gravity": "3.2",
     "group": "Phosphates"
-  },
-  {
-    "name": "Tourmaline",
-    "image_filename": "Tourmaline.jpg",
-    "image_caption": "Schorl Tourmaline",
-    "category": "Cyclosilicate",
-    "formula": "(Ca,K,Na,[])(Al,Fe,Li,Mg,Mn)<sub>3</sub>(Al,Cr, Fe,V)<sub>6</sub>(BO<sub>3</sub>)<sub>3</sub>(Si,Al,B)<sub>6</sub>O<sub>18</sub>(OH,F)<sub>4</sub>",
-    "crystal_system": "Trigonal",
-    "color": "Most commonly black, but can range from colorless, brown, violet, yellow, orange, blue, red, green, pink, or bi-colored, or even tri-colored.",
-    "cleavage": "Indistinct",
-    "mohs_scale_hardness": "7\u20137.5",
-    "luster": "Vitreous, sometimes resinous",
-    "streak": "White",
-    "optical_properties": "Double refractive, uniaxial negative",
-    "refractive_index": "n\u03c9=1.635\u20131.675, n\u03b5=1.610\u20131.650",
-    "crystal_habit": "Parallel and elongated. Acicular prisms, sometimes radiating. Massive. Scattered grains (in granite).",
-    "specific_gravity": "3.06 (+.20 -.06)",
-    "group": "Silicates"
   },
   {
     "name": "Tremolite",

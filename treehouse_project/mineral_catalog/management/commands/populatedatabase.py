@@ -18,5 +18,7 @@ class Command(BaseCommand):
             data = json.load(json_data)
 
         for mineral_data in data:
-            Mineral.objects.create(**mineral_data)
-                
+            try:
+                Mineral.objects.create(**mineral_data)
+            except:
+                breakpoint()
