@@ -19,6 +19,7 @@ group = [
     ('Other', 'Other'),
 ]
 
+# get the data needed to create labels for select element
 category_qs = Mineral.objects.all().order_by(
     'category').distinct().values('category')
 category = [(category['category'], category['category'])
@@ -33,15 +34,14 @@ class FilterSearchForm(forms.Form):
     search = forms.CharField(max_length=255, required=False)
     letter = forms.ChoiceField(
         choices=[('all', 'all')] + [(letter, letter) for letter in alphabet],
-        widget=forms.Select(attrs={"onChange": 'this.form.submit()'}),
         required=False,
-        )
-    group = forms.ChoiceField(choices=[('all', 'all')] + group, widget=forms.Select(
-        attrs={"onChange": 'this.form.submit()'}), required=False)
+    )
+    group = forms.ChoiceField(
+        choices=[('all', 'all')] + group, required=False,)
     category = forms.ChoiceField(
-        choices=[('all', 'all')] + category, widget=forms.Select(attrs={"onChange": 'this.form.submit()'}), required=False)
+        choices=[('all', 'all')] + category, required=False,)
     streak = forms.ChoiceField(
-        choices=[('all', 'all')] + streak, widget=forms.Select(attrs={"onChange": 'this.form.submit()'}), required=False)
+        choices=[('all', 'all')] + streak, required=False,)
 
     def __init__(self, *args, **kwargs):
         super(FilterSearchForm, self).__init__(*args, **kwargs)

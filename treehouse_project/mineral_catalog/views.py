@@ -16,6 +16,7 @@ def mineral_catalog_list(request):
 
     form = FilterSearchForm(request.GET or None)
 
+    # create query for searching by first letter of the mineral
     if 'letter' in data.keys():
         by_letter = data['letter']
         if by_letter != 'all':
@@ -25,6 +26,7 @@ def mineral_catalog_list(request):
     else:
         alphabet_Q = Q(name__startswith=by_letter)
 
+    # create query for searching by group
     if 'group' in data.keys():
         by_group = data['group']
         if by_group != 'all':
@@ -34,6 +36,7 @@ def mineral_catalog_list(request):
     else:
         group_Q = Q()
 
+    # create query for searching by category
     if 'category' in data.keys():
         by_category = data['category']
         if by_category != 'all':
@@ -43,6 +46,7 @@ def mineral_catalog_list(request):
     else:
         category_Q = Q()
 
+    # create query for searching by streak
     if 'streak' in data.keys():
         by_streak = data['streak']
         if by_streak != 'all':
@@ -52,6 +56,7 @@ def mineral_catalog_list(request):
     else:
         streak_Q = Q()
 
+    # create query for searching by text in all of the fields in database
     if 'search' in data.keys():
         by_search = data['search']
         search_Q = (

@@ -32,6 +32,7 @@
             </form>
             <form action="/minerals/" method="GET">
                 {{ form.as_p }}
+                <input class="button" type="submit" value="Search">
                 <a class="reset" href="{% url 'mineral_catalog:list' %}">Reset</a>
             </form>
         </div>
