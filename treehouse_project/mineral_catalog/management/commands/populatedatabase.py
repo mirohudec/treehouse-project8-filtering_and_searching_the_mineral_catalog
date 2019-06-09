@@ -3,6 +3,7 @@ import json
 
 from django.core.management.base import BaseCommand
 from mineral_catalog.models import Mineral
+from django.db.utils import OperationalError
 
 
 class Command(BaseCommand):
@@ -20,5 +21,6 @@ class Command(BaseCommand):
         for mineral_data in data:
             try:
                 Mineral.objects.create(**mineral_data)
-            except:
-                breakpoint()
+            except OperationalError:
+                print('Error occured. Did you you call migrate?')
+                break
