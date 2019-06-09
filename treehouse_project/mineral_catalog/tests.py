@@ -121,10 +121,10 @@ class MineralCatalogViewsTests(TestCase):
 
     def test_mineral_catalog_list_by_group(self):
         response = self.client.get(reverse('mineral_catalog:list'), data={
-            'letter': 'all',
+            'letter': '------',
             'group': 'Borates',
-            'category': 'all',
-            'streak': 'all',
+            'category': '------',
+            'streak': '------',
             'search': ''
         })
         query_string = response.request['QUERY_STRING']
@@ -134,10 +134,10 @@ class MineralCatalogViewsTests(TestCase):
 
     def test_mineral_catalog_list_by_category(self):
         response = self.client.get(reverse('mineral_catalog:list'), data={
-            'letter': 'all',
-            'group': 'all',
+            'letter': '------',
+            'group': '------',
             'category': 'Sulfide',
-            'streak': 'all',
+            'streak': '------',
             'search': ''
         })
         query_string = response.request['QUERY_STRING']
@@ -147,9 +147,9 @@ class MineralCatalogViewsTests(TestCase):
 
     def test_mineral_catalog_list_by_streak(self):
         response = self.client.get(reverse('mineral_catalog:list'), data={
-            'letter': 'all',
-            'group': 'all',
-            'category': 'all',
+            'letter': '------',
+            'group': '------',
+            'category': '------',
             'streak': 'White',
             'search': ''
         })
@@ -160,10 +160,10 @@ class MineralCatalogViewsTests(TestCase):
 
     def test_mineral_catalog_list_by_search(self):
         response = self.client.get(reverse('mineral_catalog:list'), data={
-            'letter': 'all',
-            'group': 'all',
-            'category': 'all',
-            'streak': 'all',
+            'letter': '------',
+            'group': '------',
+            'category': '------',
+            'streak': '------',
             'search': 'Triclinic'
         })
         query_string = response.request['QUERY_STRING']
@@ -174,10 +174,10 @@ class MineralCatalogViewsTests(TestCase):
 
     def test_mineral_catalog_list_by_search_and_category(self):
         response = self.client.get(reverse('mineral_catalog:list'), data={
-            'letter': 'all',
-            'group': 'all',
+            'letter': '------',
+            'group': '------',
             'category': 'Nesoborates',
-            'streak': 'all',
+            'streak': '------',
             'search': 'Triclinic'
         })
         query_string = response.request['QUERY_STRING']

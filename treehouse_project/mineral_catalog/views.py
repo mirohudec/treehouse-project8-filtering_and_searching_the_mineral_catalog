@@ -7,10 +7,10 @@ from .forms import FilterSearchForm
 
 def mineral_catalog_list(request):
     by_letter = 'A'
-    by_group = 'all'
+    by_group = '------'
     by_search = ''
-    by_category = 'all'
-    by_streak = 'all'
+    by_category = '------'
+    by_streak = '------'
 
     data = request.GET
 
@@ -19,7 +19,7 @@ def mineral_catalog_list(request):
     # create query for searching by first letter of the mineral
     if 'letter' in data.keys():
         by_letter = data['letter']
-        if by_letter != 'all':
+        if by_letter != '------':
             alphabet_Q = Q(name__startswith=by_letter)
         else:
             alphabet_Q = Q()
@@ -29,7 +29,7 @@ def mineral_catalog_list(request):
     # create query for searching by group
     if 'group' in data.keys():
         by_group = data['group']
-        if by_group != 'all':
+        if by_group != '------':
             group_Q = Q(group=by_group)
         else:
             group_Q = Q()
@@ -39,8 +39,8 @@ def mineral_catalog_list(request):
     # create query for searching by category
     if 'category' in data.keys():
         by_category = data['category']
-        if by_category != 'all':
-            category_Q = Q(category=by_category)
+        if by_category != '------':
+            category_Q = Q(category__icontains=by_category)
         else:
             category_Q = Q()
     else:
@@ -49,8 +49,8 @@ def mineral_catalog_list(request):
     # create query for searching by streak
     if 'streak' in data.keys():
         by_streak = data['streak']
-        if by_streak != 'all':
-            streak_Q = Q(streak=by_streak)
+        if by_streak != '------':
+            streak_Q = Q(streak__icontains=by_streak)
         else:
             streak_Q = Q()
     else:
